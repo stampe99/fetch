@@ -5,7 +5,7 @@ import ctypes
 import os
 from osinfo import Variables
 
-# Emojis
+# Emojis ( Unicode )
 
 balloon = '\U0001F388'
 rocket = '\U0001F680'

@@ -9,7 +9,7 @@ lib = ctypes.windll.kernel32
 t = lib.GetTickCount64()
 t = int(str(t)[:-3])
 
-# Emojis
+# Emojis ( Unicode )
 
 balloon = '\U0001F388'
 rocket = '\U0001F680'
