@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from colorama import Fore
 import platform
 import sys
