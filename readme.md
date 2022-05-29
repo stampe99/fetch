@@ -13,7 +13,12 @@ pip install -r requirements.txt
 ```
 git clone https://github.com/stampe99/fetch
 ```
-alternatively clone with github desktop and/or download the zip and extract it, then follow the linux or windows instructions
+Alternatively clone with github desktop and/or download the zip and extract it, then follow the linux or windows instructions
+
+Change directory into whatever you named the folder
+```
+cd fetch
+```
 
 ## Linux Setup
 
