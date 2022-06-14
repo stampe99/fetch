@@ -37,11 +37,11 @@ blue = Fore.BLUE
 white = Fore.WHITE
 
 new = rf'''
-{lyellow}     .--.         {lyellow + Variables.User + reset + "@" + lyellow + platform.system() + reset}
-{lyellow}    |{reset}o_o{lyellow} |        {green + "Terminal" + red + " -> " + reset + Variables.term}
-{lyellow}    |{Fore.RED}:_/{lyellow} |        {green + "CPU" + red + " -> " + reset + Variables.CPU}
-{lyellow}   //   \ \       {green + "Memory" + red + " -> " + reset + Variables.ram}
-{lyellow}  (|     | )      {green + "Uptime" + red + " -> " + reset + f"{days} days, {hour:02}:{mins:02}:{sec:02}"}
+{lyellow}     .--.         {lyellow + Variables.pc_name + reset + "@" + lyellow + platform.system() + reset}
+{lyellow}    |{reset}o_o{lyellow} |        {green + "terminal" + red + " -> " + reset + Variables.term}
+{lyellow}    |{Fore.RED}:_/{lyellow} |        {green + "cpu" + red + " -> " + reset + Variables.CPU}
+{lyellow}   //   \ \       {green + "memory" + red + " -> " + reset + Variables.ram}
+{lyellow}  (|     | )      {green + "uptime" + red + " -> " + reset + f"{days} days, {hour:02}:{mins:02}:{sec:02}"}
 {lyellow} /'\_   _/`\
 {lyellow} \___)=(___/      {black +"███" + reset}{red +"███" + reset}{green +"███" + reset}{yellow +"███" + reset}{blue +"███" + reset}{magenta +"███" + reset}{cyan +"███" + reset}{white +"███" + reset}
 

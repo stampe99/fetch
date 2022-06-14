@@ -7,47 +7,52 @@ import distro
 
 class Variables():
     try:
-        shell = os.environ['SHELL'].replace("/usr/bin/", "")
+        shell = os.environ['SHELL'].replace("/usr/bin/", "").lower()
     except:
-        shell = "Unknown"
+        shell = "unknown"
         pass
     try:
         proc = cpuinfo.get_cpu_info()
-        CPU = proc["brand_raw"]
+        CPU = proc["brand_raw"].lower()
     except:
-        CPU = "Unknown"
+        CPU = "unknown"
         pass
     try:
         proc = cpuinfo.get_cpu_info()
-        Bit = proc["arch_string_raw"]
+        Bit = proc["arch_string_raw"].lower()
     except:
-        Bit = "Unknown"
+        Bit = "unknown"
         pass
     try:
-        ram = str(round(psutil.virtual_memory().total / (1024.0 **3)))+" GB"
+        ram = str(round(psutil.virtual_memory().total / (1024.0 **3)))+" gb"
     except:
-        ram = "Unknown"
+        ram = "unknown"
         pass
     try:
-        User = os.environ['USER']
+        User = os.environ['USER'].lower()
     except:
         pass
-        User = "Unknown"
+        User = "unknown"
     try:
-        distr = distro.linux_distribution()[0]
+        distr = distro.linux_distribution()[0].lower()
     except:
-        distr = "Unknown"
+        distr = "unknown"
         pass
     try:
         if os.environ['XDG_CURRENT_DESKTOP'] and os.environ['DESKTOP_SESSION']:
-            GUI = os.environ['XDG_CURRENT_DESKTOP'] +  ", " + os.environ['DESKTOP_SESSION']
+            GUI = os.environ['XDG_CURRENT_DESKTOP'].lower() +  ", " + os.environ['DESKTOP_SESSION'].lower()
     except:
-        GUI = "Unknown"
+        GUI = "unknown"
         pass
     try:
-        term = os.environ["TERM"]
+        term = os.environ["TERM"].lower()
     except:
-        term = "Unknown"
+        term = "powershell" # If it's not set, it's probably a Windows terminal if you're on windows
+        pass
+    try:
+        pc_name = os.environ['COMPUTERNAME'].lower()
+    except:
+        pc_name = "unknown"
         pass
 
 

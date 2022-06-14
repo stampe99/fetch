@@ -32,10 +32,10 @@ white = Fore.WHITE
 
 peng = rf'''
 {lyellow}     .--.         {lyellow + Variables.User + reset + "@" + lyellow + platform.system() + reset}
-{lyellow}    |{reset}o_o{lyellow} |        {green + "Shell" + red + " -> " + reset + Variables.shell}
-{lyellow}    |{Fore.RED}:_/{lyellow} |        {green + "Distro" + red + " -> " + reset + Variables.distr}
-{lyellow}   //   \ \       {green + "CPU" + red + " -> " + reset + Variables.CPU}
-{lyellow}  (|     | )      {green + "Memory" + red + " -> " + reset + Variables.ram}
+{lyellow}    |{reset}o_o{lyellow} |        {green + "shell" + red + " -> " + reset + Variables.shell}
+{lyellow}    |{Fore.RED}:_/{lyellow} |        {green + "distro" + red + " -> " + reset + Variables.distr}
+{lyellow}   //   \ \       {green + "cpu" + red + " -> " + reset + Variables.CPU}
+{lyellow}  (|     | )      {green + "memory" + red + " -> " + reset + Variables.ram}
 {lyellow} /'\_   _/`\
 {lyellow} \___)=(___/      {black +"███" + reset}{red +"███" + reset}{green +"███" + reset}{yellow +"███" + reset}{blue +"███" + reset}{magenta +"███" + reset}{cyan +"███" + reset}{white +"███" + reset}
 
