@@ -31,7 +31,7 @@ blue = Fore.BLUE
 white = Fore.WHITE
 
 peng = rf'''
-{lyellow}     .--.         {lyellow + Variables.User + reset + "@" + lyellow + platform.system() + reset}
+{lyellow}     .--.         {lyellow + Variables.User + reset + "@" + lyellow + platform.system().lower() + reset}
 {lyellow}    |{reset}o_o{lyellow} |        {green + "shell" + red + " -> " + reset + Variables.shell}
 {lyellow}    |{Fore.RED}:_/{lyellow} |        {green + "distro" + red + " -> " + reset + Variables.distr}
 {lyellow}   //   \ \       {green + "cpu" + red + " -> " + reset + Variables.CPU}

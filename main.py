@@ -37,7 +37,7 @@ blue = Fore.BLUE
 white = Fore.WHITE
 
 new = rf'''
-{lyellow}     .--.         {lyellow + Variables.pc_name + reset + "@" + lyellow + platform.system() + reset}
+{lyellow}     .--.         {lyellow + Variables.pc_name + reset + "@" + lyellow + platform.system().lower() + reset}
 {lyellow}    |{reset}o_o{lyellow} |        {green + "terminal" + red + " -> " + reset + Variables.term}
 {lyellow}    |{Fore.RED}:_/{lyellow} |        {green + "cpu" + red + " -> " + reset + Variables.CPU}
 {lyellow}   //   \ \       {green + "memory" + red + " -> " + reset + Variables.ram}
